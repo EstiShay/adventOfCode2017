@@ -9,9 +9,8 @@ def checksum(spreadsheet):
     for row in spreadsheet:
         big = 0
         small = 10000
-        
+
         rowData = row[0].split()
-        #Need a better way to clean up the csv
 
         for num in rowData:
             num = int(num)
