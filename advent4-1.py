@@ -9,7 +9,6 @@ def passphrases1(passList):
     invalid = 0
 
     for entry in passList:
-        print(entry)
         entryWords = entry[0].split(" ")
         index1 = 0
         index2 = 1
@@ -29,8 +28,6 @@ def passphrases1(passList):
 
             if index2 == len(entryWords)-1 and check == True:
                 valid += 1
-                print(entryWords)
-
 
     print("There are "+str(valid)+" valid and "+str(invalid)+" invalid passphrases.")
 
